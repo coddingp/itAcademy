@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/ClassWork9.OOP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/itClass4CiclesFor" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/itHomeWork13Fridge" vcs="Git" />
