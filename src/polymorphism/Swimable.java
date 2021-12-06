@@ -7,4 +7,6 @@ public interface Swimable {
 default void swim(){
     System.out.println("It able to swim");
 }
+
+public void sound();
 }

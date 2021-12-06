@@ -14,4 +14,9 @@ public class BlackBoard extends AbstractBoard implements Writable{
             System.out.println("Write with a chalk");
         }
     }
+
+    @Override
+    public void read() {
+        System.out.println(" you can read from it");
+    }
 }

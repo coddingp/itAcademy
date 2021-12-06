@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Tortle extends Animal implements AbilitiesOfTortles{
+public class Tortle extends AbstractAnimal implements AbilitiesOfTortles, ShellsCareble{
 
     private int age;
 
@@ -40,5 +40,15 @@ public class Tortle extends Animal implements AbilitiesOfTortles{
     @Override
     public void swim() {
         System.out.println("It swims");
+    }
+
+    @Override
+    public void sound() {
+        System.out.println("THere is no sound");
+    }
+
+    @Override
+    public void careShells() {
+        System.out.println("it cares shells");
     }
 }
