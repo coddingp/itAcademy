@@ -13,5 +13,11 @@ public class WhiteBoard extends AbstractBoard implements Writable {
         if (this.kind.equals("WhiteBoard")){
             System.out.println("Write with marker");
         }
+
+    }
+
+    @Override
+    public void read() {
+            System.out.println("You can read it here");
     }
 }
