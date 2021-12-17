@@ -54,9 +54,18 @@ public class SetRadius extends Canvas {
     public void paint(Graphics graphics) {
         String userColorScanner = SetRadius.color;
         Color userFirstColor;
-        if (userColorScanner.equals("RED")) {
-            userFirstColor = Color.RED;
-        } else userFirstColor = Color.BLUE;
+        switch (userColorScanner) {
+            case "RED":
+                userFirstColor = Color.RED;
+                break;
+            case "WHITE":
+                userFirstColor = Color.WHITE;
+                break;
+            case "BLACK":
+                userFirstColor = Color.BLACK;
+                break;
+            default: userFirstColor = Color.BLUE;
+        }
         graphics.setColor(userFirstColor);
         // Нас интересует только этот блок
         graphics.fillOval(100, 50, this.userWidth, this.userHeight); // Остальное магия…
