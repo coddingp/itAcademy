@@ -1,4 +1,6 @@
-package polymorphism;
+package polymorphism2;
+
+import polymorphism.AbstractAnimal;
 
 public class Duck extends AbstractAnimal implements Swimable {
     private int feathers;
@@ -27,7 +29,7 @@ public class Duck extends AbstractAnimal implements Swimable {
         System.out.println("It sound Quack");
     }
 
-    public void fly(){
+    public void fly() {
         System.out.println("it is able to fly");
     }
 

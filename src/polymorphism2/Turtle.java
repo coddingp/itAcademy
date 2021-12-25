@@ -1,12 +1,13 @@
-package polymorphism;
+package polymorphism2;
 
-import polymorphism2.ShellsCareble;
+import polymorphism.AbilitiesOfTortles;
+import polymorphism.AbstractAnimal;
 
-public class Tortle extends AbstractAnimal implements AbilitiesOfTortles, ShellsCareble {
+public class Turtle extends AbstractAnimal implements AbilitiesOfTortles, ShellsCareble {
 
     private int age;
 
-    public Tortle(String name, int age) {
+    public Turtle(String name, int age) {
         super(name);
         this.age = age;
     }

@@ -1,8 +1,6 @@
-package polymorphism;
+package polymorphism2;
 
-import itClassWorkEnimals.Animal;
-
-public class Shark extends polymorphism.AbstractAnimal implements Swimable, Huntable{
+public class Shark extends polymorphism.AbstractAnimal implements Swimable, Huntable {
     private int teeth;
 
     public Shark(String name, int teeth) {

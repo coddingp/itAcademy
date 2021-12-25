@@ -1,5 +1,10 @@
 package polymorphism;
 
+import polymorphism2.Duck;
+import polymorphism2.Shark;
+import polymorphism2.Swimable;
+import polymorphism2.Turtle;
+
 import java.util.Arrays;
 
 public class Main {
@@ -45,11 +50,11 @@ public class Main {
             oceanarium[i].swim();
             oceanarium[i].sound();
             i++;
-            oceanarium[i+5] = new Tortle(" Dirby" + i, 15 * i);
+            oceanarium[i + 5] = new Tortle(" Dirby" + i, 15 * i);
             oceanarium[i].sound();
             oceanarium[i].swim();
             i++;
-            oceanarium[i+10] = new Duck("Clava" + i, 123);
+            oceanarium[i + 10] = new Duck("Clava" + i, 123);
             oceanarium[i].sound();
             oceanarium[i].swim();
         }
@@ -58,12 +63,12 @@ public class Main {
 
         System.out.println(oceanarium.getClass());
 
-        for (int i = 0; i< oceanarium.length; i++){
-            if (oceanarium[i]instanceof Shark){
+        for (int i = 0; i < oceanarium.length; i++) {
+            if (oceanarium[i] instanceof Shark) {
                 ((Shark) oceanarium[i]).hunt();
-            }else if (oceanarium[i]instanceof Tortle){
+            } else if (oceanarium[i] instanceof Tortle) {
                 ((Tortle) oceanarium[i]).careShells();
-            }else if (oceanarium[i]instanceof Duck){
+            } else if (oceanarium[i] instanceof Duck) {
                 ((Duck) oceanarium[i]).fly();
             }
         }
